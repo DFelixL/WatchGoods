@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+    <title>Watch Goods</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <section class="au-header">
+        <nav>
+            <a href="Home.html"><img src="Images/Logo Fix.png" class="logo"></a>
+            <div class="links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Locations.html">Locations</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+
+    <section class="contactus">
+        <div class="row1">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>WatchGoods@gmail.com</h5>
+                        <p>Monday - Friday</p>
+                    </span>
+                </div>
+                
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+62 21 1692 3694</h5>
+                        <p>9AM - 5PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-home"><br><br><br><br><br></i>
+                    <span>
+                        <h5>Indonesia</h5>
+                        <p>Tangerang</p>
+                        <br>
+                        <h5>United Arab Emirated</h5>
+                        <p>Dubai</p>
+                         <br>
+                        <h5>Unites State of America</h5>
+                        <p>New York</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form method="get" class="form">
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <input type="text" id="country" placeholder="Indonesia">
+                    <input type="email" id="email" placeholder="Enter email address">
+                    <textarea rows="8" placeholder="Inquiry"></textarea>
+                    <div class="label">
+                        <input type="checkbox" id="agreement">
+                        <p>I agree to receive a copy of the answer <br><p>
+                    </div>
+                    <button type="button" onclick="validate()" class="spec-btn red-btn">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>A sleek, stylized representation of a classic pocket watch, incorporating modern elements to signify <br>both tradition 
+        and innovation. Timeless Luxury Rediscovered</p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+    
+
+
+</body>
+</html>
